@@ -7,13 +7,19 @@
 header {
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .navdiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100px;
+}
+
+.nav_link {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -35,6 +41,8 @@ a {
   align-items: center;
 }
 
+i {}
+
 .button1 {
   position: relative;
   background-color: transparent;
@@ -44,7 +52,7 @@ a {
   justify-content: space-between;
 }
 
-span {
+.span-icon {
   position: absolute;
   border-radius: 20px;
   background-color: blue;
@@ -336,6 +344,7 @@ b {
 .p4 {
   padding-left: 10px;
 }
+
 .generaldiv {
   background: url(./images/copy.jpg);
   display: flex;
@@ -344,10 +353,19 @@ b {
   /* flex-wrap: wrap; */
   padding-top: 50px;
 }
-.test-div{
-    display: flex;
+
+.test-div {
+  display: flex;
 
 }
+
+.hamburger {
+  display: none;
+
+}
+
+
+
 
 
 
@@ -369,6 +387,54 @@ b {
 
 /* REsponsive screens */
 
+
+@media (max-width: 1024px) {
+
+  .nav_link{
+    display: block;
+    position: relative;
+    top: 120px;
+    left: -170px;
+    background-color: white;
+    z-index: 20;
+    width: 1000%;
+    padding: 10px;
+
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+  }
+
+
+  .hide {
+    display: none;
+  }
+
+  .logo, .cart {
+    display: block;
+  }
+
+  .logo a, .cart a {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+
+
+
+}
+
+
+
 @media (max-width: 768px) {
   .button4 {
     width: 100%;
@@ -376,7 +442,7 @@ b {
 
   .sectiondiv2 {
     display: block;
-    
+
   }
 
   .divsec21 {
@@ -391,21 +457,25 @@ b {
     width: 100%;
   }
 
-.divided {
+  .divided {
     display: block;
-}
+  }
 
-.rocking, .study, .imgproject, .imground {
+  .rocking,
+  .study,
+  .imgproject,
+  .imground {
     height: unset;
     width: 100%;
-}
-.generaldiv {
+  }
+
+  .generaldiv {
     display: block;
     /* flex-wrap: wrap; */
   }
 
 
-  .test-div{
+  .test-div {
     display: block;
     width: fit-content;
     margin: auto;
